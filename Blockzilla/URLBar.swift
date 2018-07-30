@@ -179,7 +179,7 @@ class URLBar: UIView {
         deleteButton.layer.borderColor = UIConstants.colors.deleteButtonBorder.cgColor
         deleteButton.setContentHuggingPriority(UILayoutPriority(rawValue: 1000), for: .horizontal)
         deleteButton.setContentCompressionResistancePriority(UILayoutPriority(rawValue: 1000), for: .horizontal)
-        deleteButton.addTarget(self, action: #selector(didPressDelete), for: .touchUpInside)
+        deleteButton.addTarget(self, action: #selector(didPressDelete), for: .touchDown)
         deleteButton.accessibilityIdentifier = "URLBar.deleteButton"
         addSubview(deleteButton)
 
