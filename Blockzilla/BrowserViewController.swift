@@ -962,7 +962,8 @@ extension BrowserViewController: URLBarDelegate {
     func urlBarDidLongPressUrl(_ urlBar: URLBar) {
             let customURLItem = PhotonActionSheetItem(title: UIConstants.strings.customURLMenuButton)
             let copyItem = PhotonActionSheetItem(title: UIConstants.strings.copyMenuButton)
-            let testMenu = PhotonActionSheet(actions: [[customURLItem], [copyItem]], style: .none)
+            let testMenu = PhotonActionSheet(actions: [[customURLItem], [copyItem]], style: .overCurrentContext)
+            testMenu.modalPresentationStyle = .overCurrentContext
             present(testMenu, animated: true, completion: nil)
     }
 }
