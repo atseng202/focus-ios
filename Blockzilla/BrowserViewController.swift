@@ -958,6 +958,13 @@ extension BrowserViewController: URLBarDelegate {
     func urlBarDidTapShield(_ urlBar: URLBar) {
         showDrawer()
     }
+    
+    func urlBarDidLongPressUrl(_ urlBar: URLBar) {
+            let customURLItem = PhotonActionSheetItem(title: UIConstants.strings.customURLMenuButton)
+            let copyItem = PhotonActionSheetItem(title: UIConstants.strings.copyMenuButton)
+            let testMenu = PhotonActionSheet(actions: [[customURLItem], [copyItem]], style: .none)
+            present(testMenu, animated: true, completion: nil)
+    }
 }
 
 extension BrowserViewController: BrowserToolsetDelegate {

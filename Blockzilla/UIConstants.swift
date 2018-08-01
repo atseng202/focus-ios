@@ -291,6 +291,7 @@ struct UIConstants {
         static let externalAppLinkWithAppName = NSLocalizedString("externalAppLinkWithAppName.messageTitle", value: "%@ wants to open %@", comment: "Dialog title used for opening an external app from Focus. First placeholder string is the app name of either Focus or Klar and the second placeholder string specifies the app it wants to open.")
         static let open = NSLocalizedString("ExternalAppLink.openTitle", value: "Open", comment: "Button label for opening another app from Focus")
         static let cancel = NSLocalizedString("ExternalAppLink.cancelTitle", value: "Cancel", comment: "Button label used for cancelling to open another app from Focus")
+        static let close = NSLocalizedString("Menu.Close", value: "Close", comment: "Button label used to close a menu.")
         static let photosPermissionTitle = NSLocalizedString("photosPermission.title", value: "“%@” Would Like to Access Your Photos", comment: "Dialog title used for requesting a user to enable access to Photos. Placeholder is either Firefox Focus or Firefox Klar")
         static let photosPermissionDescription = NSLocalizedString("photosPermission.description", value: "This lets you save images to your Camera Roll", comment: "Description for dialog used for requesting a user to enable access to Photos.")
         static let openSettingsButtonTitle = NSLocalizedString("photosPermission.openSettings", value: "Open Settings", comment: "Title for button that takes the user to system settings")
